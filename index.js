@@ -5,7 +5,7 @@ import resolvers from './resolvers.js';
 
 const server = new ApolloServer({
   typeDefs: typeDefs,
-  resolvers,
+  resolvers
 })
 
 server.listen().then(() => console.log(`Server is running on http://localhost:4000`))

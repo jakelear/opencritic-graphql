@@ -67,7 +67,6 @@ export default {
     },
     Reviews: async ({ id }) => {
       const reviews = await getReviews(id);
-      console.log(reviews);
       return reviews;
     }
   }
