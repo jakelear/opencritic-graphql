@@ -35,7 +35,7 @@ export default gql`
     Outlet: Outlet!
     publishedDate: DateTime!
     score: Int
-    snippet: String!
+    snippet: String
   }
 
   type Outlet {

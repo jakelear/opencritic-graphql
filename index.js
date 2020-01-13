@@ -1,11 +1,13 @@
 const { ApolloServer, gql } = require('apollo-server');
 
-import typeDefs from './schema.gql.js';
+import typeDefs from './typedefs.js';
 import resolvers from './resolvers.js';
 
 const server = new ApolloServer({
-  typeDefs: typeDefs,
+  typeDefs,
   resolvers
 })
 
-server.listen().then(() => console.log(`Server is running on http://localhost:4000`))
+server.listen().then(({ url }) => {
+  console.log(`🍕 Server ready at ${url}`);
+});
