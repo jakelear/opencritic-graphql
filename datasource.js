@@ -7,14 +7,6 @@ export default class OpenCriticAPI extends RESTDataSource {
   constructor() {
     super();
     this.baseURL = 'https://api.opencritic.com/api';
-
-    if (debugMode) {
-      console.log(`
-        ${chalk.bold.green('---------------------------------------------')}
-        ${chalk.bold.green('---------  OpenCritic API Requests ----------')}
-        ${chalk.bold.green('---------------------------------------------')}
-      `);
-    }
   }
 
   willSendRequest(request) {
