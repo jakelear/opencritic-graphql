@@ -1,20 +1,29 @@
+const chalk = require('chalk');
 const { RESTDataSource } = require('apollo-datasource-rest');
+
+const debugMode = process.env.DEBUG;
 
 export default class OpenCriticAPI extends RESTDataSource {
   constructor() {
     super();
     this.baseURL = 'https://api.opencritic.com/api';
+
+    if (debugMode) {
+      console.log(`
+        ${chalk.bold.green('---------------------------------------------')}
+        ${chalk.bold.green('---------  OpenCritic API Requests ----------')}
+        ${chalk.bold.green('---------------------------------------------')}
+      `);
+    }
   }
 
   willSendRequest(request) {
-    // Pretty logging for debug mode
-    if (process.env.DEBUG) {
-      console.log(request.path);
+    if (debugMode) {
+      console.log(`${chalk.bold.underline.green(request.method)}: ${chalk.blue(request.path)}`);
     }
   }
 
   async getGame(id) {
-    console.log(process.env);
     return await this.get(`game/${id}`);
   }
 

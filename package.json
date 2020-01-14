@@ -21,10 +21,11 @@
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
-    "apollo-server-testing": "^2.9.16",
     "@babel/core": "^7.7.7",
     "@babel/node": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
+    "apollo-server-testing": "^2.9.16",
+    "chalk": "^3.0.0",
     "nodemon": "^2.0.2"
   }
 }
