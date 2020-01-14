@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node index.js",
-    "debug": "DEBUG=true nodemon --exec babel-node index.js"
+    "debug": "DEBUG=true nodemon --exec babel-node index.js",
+    "test": "./node_modules/.bin/jest"
   },
   "keywords": [
     "grapqhl",
@@ -26,6 +27,7 @@
     "@babel/preset-env": "^7.7.7",
     "apollo-server-testing": "^2.9.16",
     "chalk": "^3.0.0",
+    "jest": "^24.9.0",
     "nodemon": "^2.0.2"
   }
 }

@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Queries fetches games with all nested fields 1`] = `
+Object {
+  "data": Object {
+    "game": Object {
+      "Platforms": Array [
+        Object {
+          "shortName": "PS4",
+        },
+        Object {
+          "shortName": "XB1",
+        },
+        Object {
+          "shortName": "PC",
+        },
+      ],
+      "Reviews": Array [
+        Object {
+          "score": 92,
+          "snippet": "A big, beautiful, sprawling action RPG full of rich stories, and suffused with an oppressive darkness.",
+        },
+        Object {
+          "score": 93,
+          "snippet": "Massive in size, and meticulously detailed, The Witcher 3 ends Geralt's story on a high note.",
+        },
+        Object {
+          "score": 100,
+          "snippet": "This is why I love The Witcher 3: Wild Hunt. It is crass in some places and overreaching in others, but despite its grandeur and its fantastical setting, it is a game made by, for and about human beings. It's lewd and perverse and poetic and hot-blooded. It's huge yet crafted; its systems are purposeful and it doesn't have a whiff of design by committee. It will last you months, yet not waste your time. Above all, it has a vivid, enduring personality, something that is exceedingly rare among its breed of mega-budget open-world epics (and that will probably be rarer still once Hideo Kojima and Konami part ways later this year). For my money, it's the greatest role-playing game in years.",
+        },
+        Object {
+          "score": 90,
+          "snippet": "A colossal achievement in technical terms, with a level of interaction with the game world and its inhabitants that is unsurpassed in modern video games.",
+        },
+        Object {
+          "score": 80,
+          "snippet": "Sloppy combat and ongoing optimisation can't quite spoil this dark fantasy adventure, set in a stunning world of blood and black magic.",
+        },
+        Object {
+          "score": 98,
+          "snippet": "With superb storytelling, challenging combat, exciting choices, and unpredictable consequences, The Witcher 3: Wild Hunt is a must-play RPG",
+        },
+        Object {
+          "score": 80,
+          "snippet": "The Witcher 3 is a great game — with some major qualifications",
+        },
+        Object {
+          "score": 100,
+          "snippet": "The Witcher 3: Wild Hunt is one of the best games ever made.",
+        },
+        Object {
+          "score": 100,
+          "snippet": "A hell of a way to spend a few days of your life.",
+        },
+        Object {
+          "score": 90,
+          "snippet": "The Witcher III: Wild Hunt is probably one of the most well-crafted RPG worlds yet. As you wander the countryside, it feels like a real place filled with the real struggles of the beings that live there. Geralt's story is personal and quite grey; it's not about saving the world, it's about saving his surrogate family. Is it perfect? No, the combat is rote at times and the inventory and crafting needs work, but in the end, The Witcher III is a top-notch RPG experience.",
+        },
+      ],
+      "firstReleaseDate": "2015-05-19T00:00:00.000Z",
+      "id": "463",
+      "name": "The Witcher 3: Wild Hunt",
+      "tier": "Mighty",
+      "topCriticScore": 91.56382978723404,
+      "url": null,
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries fetches games with reviews 1`] = `
+Object {
+  "data": Object {
+    "game": Object {
+      "Reviews": Array [
+        Object {
+          "score": 92,
+          "snippet": "A big, beautiful, sprawling action RPG full of rich stories, and suffused with an oppressive darkness.",
+        },
+        Object {
+          "score": 93,
+          "snippet": "Massive in size, and meticulously detailed, The Witcher 3 ends Geralt's story on a high note.",
+        },
+        Object {
+          "score": 100,
+          "snippet": "This is why I love The Witcher 3: Wild Hunt. It is crass in some places and overreaching in others, but despite its grandeur and its fantastical setting, it is a game made by, for and about human beings. It's lewd and perverse and poetic and hot-blooded. It's huge yet crafted; its systems are purposeful and it doesn't have a whiff of design by committee. It will last you months, yet not waste your time. Above all, it has a vivid, enduring personality, something that is exceedingly rare among its breed of mega-budget open-world epics (and that will probably be rarer still once Hideo Kojima and Konami part ways later this year). For my money, it's the greatest role-playing game in years.",
+        },
+        Object {
+          "score": 90,
+          "snippet": "A colossal achievement in technical terms, with a level of interaction with the game world and its inhabitants that is unsurpassed in modern video games.",
+        },
+        Object {
+          "score": 80,
+          "snippet": "Sloppy combat and ongoing optimisation can't quite spoil this dark fantasy adventure, set in a stunning world of blood and black magic.",
+        },
+        Object {
+          "score": 98,
+          "snippet": "With superb storytelling, challenging combat, exciting choices, and unpredictable consequences, The Witcher 3: Wild Hunt is a must-play RPG",
+        },
+        Object {
+          "score": 80,
+          "snippet": "The Witcher 3 is a great game — with some major qualifications",
+        },
+        Object {
+          "score": 100,
+          "snippet": "The Witcher 3: Wild Hunt is one of the best games ever made.",
+        },
+        Object {
+          "score": 100,
+          "snippet": "A hell of a way to spend a few days of your life.",
+        },
+        Object {
+          "score": 90,
+          "snippet": "The Witcher III: Wild Hunt is probably one of the most well-crafted RPG worlds yet. As you wander the countryside, it feels like a real place filled with the real struggles of the beings that live there. Geralt's story is personal and quite grey; it's not about saving the world, it's about saving his surrogate family. Is it perfect? No, the combat is rote at times and the inventory and crafting needs work, but in the end, The Witcher III is a top-notch RPG experience.",
+        },
+      ],
+      "id": "463",
+      "name": "The Witcher 3: Wild Hunt",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries fetches list of games 1`] = `
+Object {
+  "data": Object {
+    "games": Array [
+      Object {
+        "id": "463",
+        "name": "The Witcher 3: Wild Hunt",
+      },
+      Object {
+        "id": "2648",
+        "name": "Witch & Hero 2",
+      },
+      Object {
+        "id": "8126",
+        "name": "Sweet Witches",
+      },
+      Object {
+        "id": "7697",
+        "name": "Witching Tower",
+      },
+      Object {
+        "id": "4549",
+        "name": "Witchinour",
+      },
+      Object {
+        "id": "8147",
+        "name": "Blair Witch",
+      },
+      Object {
+        "id": "6645",
+        "name": "Witch Thief",
+      },
+      Object {
+        "id": "2704",
+        "name": "The Witcher 3: Wild Hunt - Blood and Wine",
+      },
+      Object {
+        "id": "3435",
+        "name": "Butcher",
+      },
+      Object {
+        "id": "6037",
+        "name": "Without Within 3",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries fetches single game 1`] = `
+Object {
+  "data": Object {
+    "game": Object {
+      "id": "463",
+      "name": "The Witcher 3: Wild Hunt",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

@@ -8,6 +8,10 @@ npm start
 
 The server will run on localhost:4000 by default
 
+## Testing
+There is one simple integration test that can be run with:
+`npm run test`
+
 ## Info
 The server uses [apollo-server](https://www.apollographql.com/docs/apollo-server/). It is run with [babel-node](https://babeljs.io/docs/en/babel-node) to support imports (for ease of organizing typedefs and resolvers) and runs with [nodemon](https://www.npmjs.com/package/nodemon).
 

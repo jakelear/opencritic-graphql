@@ -11,7 +11,7 @@ export default gql`
   type Game {
     id: ID!
     name: String!
-    url: String!
+    url: String
     firstReleaseDate: DateTime!
     topCriticScore: Float!
     tier: String!
