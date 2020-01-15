@@ -10,9 +10,9 @@ export default class OpenCriticAPI extends RESTDataSource {
   }
 
    async didReceiveResponse(response, request) {
-     if (debugMode) {
-       console.log(`${chalk.bold.underline.green(request.method)}: ${chalk.blue(request.url)}`);
-     }
+    if (debugMode) {
+      console.log(`${chalk.bold.underline.green(request.method)}: ${chalk.blue(request.url)}`);
+    }
     if (response.ok) {
       return (this.parseBody(response));
     } else {

@@ -11,7 +11,9 @@ export default gql`
   type Game {
     id: ID!
     name: String!
-    bannerScreenshot: String
+    Companies: [Company]
+    Genres: [Genre]
+    bannerScreenshot: Screenshot
     description: String
     firstReleaseDate: DateTime!
     percentRecommended: Float
@@ -19,6 +21,21 @@ export default gql`
     tier: String!
     Platforms: [Platform!]
     Reviews: [Review]
+  }
+
+  type Genre {
+    id: ID!
+    name: String!
+  }
+
+  type Company {
+    name: String
+    type: String
+  }
+
+  type Screenshot {
+    fullRes: String
+    thumbnail: String
   }
 
   type Platform {
