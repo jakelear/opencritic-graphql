@@ -11,8 +11,10 @@ export default gql`
   type Game {
     id: ID!
     name: String!
-    url: String
+    bannerScreenshot: String
+    description: String
     firstReleaseDate: DateTime!
+    percentRecommended: Float
     topCriticScore: Float!
     tier: String!
     Platforms: [Platform!]
@@ -29,6 +31,7 @@ export default gql`
   }
 
   type Review {
+    _id: ID!
     Authors: [Author!]
     externalUrl: String!
     npScore: Int!

@@ -9,9 +9,14 @@ export default class OpenCriticAPI extends RESTDataSource {
     this.baseURL = 'https://api.opencritic.com/api';
   }
 
-  willSendRequest(request) {
-    if (debugMode) {
-      console.log(`${chalk.bold.underline.green(request.method)}: ${chalk.blue(request.path)}`);
+   async didReceiveResponse(response, request) {
+     if (debugMode) {
+       console.log(`${chalk.bold.underline.green(request.method)}: ${chalk.blue(request.url)}`);
+     }
+    if (response.ok) {
+      return (this.parseBody(response));
+    } else {
+      throw await this.errorFromResponse(response);
     }
   }
 

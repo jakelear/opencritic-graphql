@@ -39,7 +39,7 @@ const GET_GAMES = gql`
   }
 `;
 
-const GET_GAMES_WITH_REVIEWS = gql`
+const GET_GAME_WITH_REVIEWS = gql`
   query {
     game(id: 463) {
       id
@@ -52,7 +52,7 @@ const GET_GAMES_WITH_REVIEWS = gql`
   }
 `;
 
-const GET_GAMES_WITH_EVERYTHING = gql`
+const GET_GAME_WITH_EVERYTHING = gql`
   query {
     game(id: 463) {
       id
@@ -94,7 +94,7 @@ describe('Queries', () => {
     expect(res).toMatchSnapshot();
   });
 
-  it('fetches games with reviews', async () => {
+  it('fetches game with reviews', async () => {
     const server = createTestServer();
 
     OpenCriticAPI.getGames = jest.fn(() => [mockGamesResponse]);
@@ -105,7 +105,7 @@ describe('Queries', () => {
   });
 
 
-  it('fetches games with all nested fields', async () => {
+  it('fetches game with all nested fields', async () => {
     const server = createTestServer();
 
     OpenCriticAPI.getGames = jest.fn(() => [mockGamesResponse]);

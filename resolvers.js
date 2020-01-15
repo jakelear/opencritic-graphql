@@ -17,10 +17,14 @@ export default {
     }
   },
   Game: {
+    tier: async({ id }, args, { dataSources }) => {
+      const { tier } = await dataSources.OpenCriticAPI.getGame(id);
+      return tier;
+    },
     Reviews: async({ id }, args, { dataSources }) => {
       return dataSources.OpenCriticAPI.getReviews(id);
     },
-    Platforms: async({id}, args, { dataSources }) => {
+    Platforms: async({ id }, args, { dataSources }) => {
       const { Platforms } = await dataSources.OpenCriticAPI.getGame(id);
       return Platforms;
     }

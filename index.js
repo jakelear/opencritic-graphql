@@ -1,3 +1,4 @@
+require('dotenv').config()
 const { ApolloServer, gql } = require('apollo-server');
 
 import OpenCriticAPI from './datasource.js';
