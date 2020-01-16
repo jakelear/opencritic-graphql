@@ -5,7 +5,8 @@ export default gql`
   type Query {
     games(filter: String!): [Game!]
     game(id: ID!): Game!
-    review(id: ID!): Review!
+    reviews(id: ID!): [Review!]
+    halloffame: [Game!]
   }
 
   type Game {
@@ -14,6 +15,8 @@ export default gql`
     Companies: [Company]
     Genres: [Genre]
     bannerScreenshot: Screenshot
+    logoScreenshot: Screenshot
+    mastheadScreenshot: Screenshot
     description: String
     firstReleaseDate: DateTime!
     percentRecommended: Float

@@ -20,6 +20,10 @@ export default class OpenCriticAPI extends RESTDataSource {
     }
   }
 
+  async getHallOfFame() {
+    return await this.get(`game/hall-of-fame`);
+  }
+
   async getGame(id) {
     return await this.get(`game/${id}`);
   }

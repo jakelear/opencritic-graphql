@@ -12,8 +12,12 @@ export default {
       return dataSources.OpenCriticAPI.getGame(id);
     },
 
-    review: async (_source, { id }, { dataSources }) => {
+    reviews: async (_source, { id }, { dataSources }) => {
       return dataSources.OpenCriticAPI.getReviews(id);
+    },
+
+    halloffame: async (_source, { id }, { dataSources }) => {
+      return dataSources.OpenCriticAPI.getHallOfFame();
     }
   },
   // Thin field resolvers: https://medium.com/paypal-engineering/graphql-resolvers-best-practices-cd36fdbcef55
@@ -25,6 +29,14 @@ export default {
     bannerScreenshot: async({ id }, args, { dataSources }) => {
       const { bannerScreenshot } = await dataSources.OpenCriticAPI.getGame(id);
       return bannerScreenshot;
+    },
+    logoScreenshot: async({ id }, args, { dataSources }) => {
+      const { logoScreenshot } = await dataSources.OpenCriticAPI.getGame(id);
+      return logoScreenshot;
+    },
+    mastheadScreenshot: async({ id }, args, { dataSources }) => {
+      const { mastheadScreenshot } = await dataSources.OpenCriticAPI.getGame(id);
+      return mastheadScreenshot;
     },
     Genres: async({ id }, args, { dataSources }) => {
       const { Genres } = await dataSources.OpenCriticAPI.getGame(id);
